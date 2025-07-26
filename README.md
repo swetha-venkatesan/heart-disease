@@ -84,21 +84,3 @@ bash
 python app.py
 Open your browser to: http://localhost:5000
 
-🌏 Deployment
-Live Demo: [Deployment link goes here] (coming soon)
-
-🖼 Screenshot
-![App Screenshot 👩‍💻 Author
-
-Your Name
-
-GitHub
-
-LinkedIn
-
-📄 License
-This project is licensed under the MIT License.
-
-Data, code, and interface intended for educational and informational purposes. Not for medical use.
-
-Questions or suggestions? Feel free to open an Issue or Pull Request!
