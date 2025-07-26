@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(https://png.pngtree.com/background/20230614/original/pngtree-3d-illustration-of-heart-organ-on-blue-background-picture-image_3504814.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .result-box {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 40px 60px;
+            border-radius: 15px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+        }
+
+        h1 {
+            color: #ff4d4d;
+            margin-bottom: 20px;
+        }
+
+        .prediction {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .back-button {
+            margin-top: 30px;
+        }
+
+        .back-button a {
+            text-decoration: none;
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button a:hover {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h1>Prediction Result</h1>
+        <p class="prediction">{{ prediction }}</p>
+        {% if risk == 1%}
+        <div class="alert alert-danger" role="alert">
+            <strong>High Risk</strong> You are at high risk of having heart disease.
+        </div>
+        {% elif risk == 0%}
+        <div class="alert alert-success" role="alert">
+            <strong>Low Risk</strong> You are at low risk of having heart disease.
+        </div>
+        {% endif %}
+        <div class="back-button">
+            <a href="D:\Appro_Project_1(image_classification)\prediction\copy-heart\templates\index.html" class="btn btn-primary mt-3">Back to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>
